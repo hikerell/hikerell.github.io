@@ -51,6 +51,69 @@
 
 }
 
+#links{
+
+	position:absolute;
+
+	top:5%;
+
+	left:5%;
+
+	width:100px;
+
+	background-color: #999;
+
+	border:0px solid #FFF;
+
+	border-radius:15px;
+
+	cursor:pointer;
+
+	text-align:center;;
+
+	line-height:48px;
+
+	font-size:24px;
+
+	font-family:"Comic Sans MS", cursive;
+
+}
+
+#links:hover{
+
+	background-color:red;
+
+	color:#FFF;
+
+}
+
+#about{
+
+	position:absolute;
+
+	bottom: 20%;
+
+	left:50%;
+
+	width: 780px;
+
+	margin-left: -380px;
+
+	background-color: #898;
+
+	border-radius:8px;
+
+	text-align:center;;
+
+	line-height:48px;
+
+	font-size:24px;
+
+	font-family:"Comic Sans MS", cursive;
+
+}
+
+
 </style>
 
 <script>
@@ -111,14 +174,14 @@ fallid = setInterval(function(){
 
 <body style="margin:0">
 
+<div id="links" onclick="window.open('http://hikerell.cn/links.html','_parent');">links</div>
 <div id="center" onclick="window.open('http://hikerell.cn/blog','_parent');">
-
 Hikerell的黑帽子
-
 </div>
-
+<div id="about">
+Malware, Vulnerabilities, Exploits, Shellcodes, AI and more . . .
+</div>
 <canvas id="q"></canvas>
-
 <script>
 
 var fallid=null;
