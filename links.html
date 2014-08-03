@@ -15,22 +15,45 @@
 	<!-- floated navigation -->
 	<div id="RegionNav">
 		<ul class="tabs">
-			<li id="tab0" class="btn" onClick="javascript:Change('0');">Blogs</li>
-			<li id="tab1" class="btn" onClick="javascript:Change('1');">Security</li>
-			<li id="tab2" class="btn" onClick="javascript:Change('2');">Other</li>
+			<li id="tab0" class="btn" onClick="javascript:Change('0');">Forums</li>
+			<li id="tab1" class="btn" onClick="javascript:Change('1');">Blogs</li>
+			<li id="tab2" class="btn" onClick="javascript:Change('2');">Resources</li>
+			<li id="tab3" class="btn" onClick="javascript:Change('3');">Tools</li>
+			<li id="tab4" class="btn" onClick="javascript:Change('4');">Other</li>
 		</ul>
 	</div>
 
 	<!-- contents -->
 	<div id="RegionCnt">
-		<div id="cnt0" class="tabcnt">
+		<div id="cnt0" class="tabhidecnt">
+			<div class="cnttable">
+				<div class="cntcap">Security Forums</div>
+				<div class="cntbody">
+					<div class="cntrow">
+						<div class="cntcell"><a href="http://www.pediy.com/">看雪</a></div>
+						<div class="cntcell"><a href="http://www.freebuf.com/">FREEBUF</a></div>	
+					</div>
+					<div class="cntrow">
+						<div class="cntcell"><a href="http://www.nmap.org/">Nmap</a></div>
+						<div class="cntcell"><a href="http://www.enigmagroup.org/">EnigmaGroup</a></div>			
+					</div>
+					<div class="cntrow">
+						<div class="cntcell"><a href="http://www.binvul.com/">BinVul</a></div>
+						<div class="cntcell"><a href="http://sla.ckers.org/forum/">Slackers(Web)</a></div>			
+					</div>
+					<div class="cntrow">
+						<div class="cntcell"><a href="http://www.garage4hackers.com/forum.php">garage4hackers</a></div>
+						<div class="cntcell"><a href="http://sla.ckers.org/forum/">Slackers(Web)</a></div>			
+					</div>
+				</div>
+				<div class="cntfooter"></div>
+			</div>
+		</div>
+		<div id="cnt1" class="tabcnt">
 			<div class="cnttable">
 				<div class="cntcap">Some Security Blogs(Sites)</div>
 				<div class="cntbody">
-				<div class="cntrow">
-					<div class="cntcell"><a href="http://www.pediy.com/">看雪</a></div>
-					<div class="cntcell"><a href="http://www.freebuf.com/">FREEBUF</a></div>	
-				</div>
+				
 				<div class="cntrow">
 					<div class="cntcell"><a href="http://www.fireeye.com/blog/">FireEye</a></div>
 					<div class="cntcell"><a href="http://www.vupen.com/blog/">VUPEN</a></div>	
@@ -40,7 +63,15 @@
 					<div class="cntcell"><a href="http://www.greyhathacker.net/">GreyHatHacker.NET</a></div>
 				</div>
 				<div class="cntrow">
-					<div class="cntcell"><a href="http://blog.vulnhunt.com/">翰海源</a></div>
+					<div class="cntcell"><a href="http://secniche.blogspot.com/">secniche</a></div>
+					<div class="cntcell"><a href="http://www.thegreycorner.com/">The Grey Corner</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://research.zscaler.com/">zscaler</a></div>
+					<div class="cntcell"><a href="https://www.netspi.com/blog">NetSPI</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://blog.vulnhunt.com/">Vulnhunt Blog</a></div>
 					<div class="cntcell"><a href="http://web2hack.org/">Web2.0 Hacking</a></div>	
 				</div>
 				<div class="cntrow">
@@ -48,7 +79,22 @@
 					<div class="cntcell"><a href="https://code.google.com/p/it-sec-catalog/">it-sec-catalog</a></div>	
 				</div>
 				<div class="cntrow">
-					<div class="cntcell"><a href="http://www.91ri.org/">网络安全攻防研究室</a></div>
+					<div class="cntcell"><a href="http://blog.fortinet.com/category/Security Research/">fortinet</a></div>
+					<div class="cntcell"><a href="https://community.rapid7.com/welcome">rapid7</a></div>	
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://securityxploded.com/">SecurityXploded</a></div>
+					<div class="cntcell"><a href="https://www.soldierx.com/hdb">Hackers DB</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://funoverip.net/">Fun OVer IP</a></div>
+					<div class="cntcell"><a href="http://www.shelliscoming.com">shelliscoming</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://samy.pl/">samy</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://www.91ri.org/">91ri</a></div>
 					<div class="cntcell"><a href="http://www.cnseay.com/">Sean</a></div>
 				</div>
 				<div class="cntrow">
@@ -57,7 +103,7 @@
 				</div>
 				<div class="cntrow">
 					<div class="cntcell"><a href="http://www.i0day.com/">Pony(小马)</a></div>
-					<div class="cntcell"><a href="http://www.binvul.com/">BinVul</a></div>
+					<div class="cntcell"><a href="http://www.i0day.com/">scotthelme.co.uk</a></div>		
 				</div>
 				<div class="cntrow">
 					<div class="cntcell"><a href="http://metasploit.lofter.com/">风迷</a></div>
@@ -76,16 +122,8 @@
 					<div class="cntcell"><a href="http://www.securitytube.net/">Security Tube</a></div>
 				</div>
 				<div class="cntrow">
-					<div class="cntcell"><a href="http://skypher.com/">skypher</a></div>
-					<div class="cntcell"><a href="http://www.securitytube.net/">Security Tube</a></div>
-				</div>
-				<div class="cntrow">
 					<div class="cntcell"><a href="http://resources.infosecinstitute.com/">infosec</a></div>
 					<div class="cntcell"><a href="http://packetstormsecurity.com/">Packet Storm</a></div>
-				</div>
-				<div class="cntrow">
-					<div class="cntcell"><a href="http://securityxploded.com/">SecurityXploded</a></div>
-					<div class="cntcell"><a href="https://www.soldierx.com/hdb">Hackers DB</a></div>
 				</div>
 				<div class="cntrow">
 					<div class="cntcell"><a href="http://ho.ax/">ho.ax</a></div>
@@ -94,13 +132,26 @@
 				<div class="cntrow">
 					<div class="cntcell">
 						<a href="http://users.ece.cmu.edu/~dbrumley/courses/18732-f09/schedule.html">SoftwareSecurity</a></div>
+					<div class="cntcell"><a href="http://www.secniu.com/">secniu</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://sickbits.net/articles/">sickbits</a></div>
+					<div class="cntcell"><a href="http://www.offensivecomputing.net/">Open Malware</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://x9090.blogspot.com/">x9090</a></div>
+					<div class="cntcell"><a href="http://vreugdenhilresearch.nl/">Vreugdenhil</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://security.tencent.com/index.php/blog">Tecent Sec</a></div>
+					<div class="cntcell"><a href="http://wiki.ourren.com/">SecWiki</a></div>
 				</div>
 				</div>
 				<div class="cntfooter">
 				</div>
 			</div>
 		</div>
-		<div id="cnt1" class="tabhidecnt">
+		<div id="cnt2" class="tabhidecnt">
 			<div class="cnttable">
 				<div class="cntcap">Vulnerabilities and Exploits Databases</div>
 				<div class="cntbody">
@@ -140,7 +191,6 @@
 				<div class="cntfooter">
 				</div>
 			</div>
-
 			<div class="cnttable">
 				<div class="cntcap">MSF Resources</div>
 				<div class="cntbody">
@@ -188,7 +238,37 @@
 				</div>
 			</div>
 		</div>
-		<div id="cnt2" class="tabhidecnt">
+		<div id="cnt3" class="tabhidecnt">
+			<div class="cnttable">
+				<div class="cntcap">Tools</div>
+				<div class="cntbody">
+				<div class="cntrow">
+					<div class="cntcell">
+						<a href="http://www.hashkiller.co.uk/" style="width: 800px">MD5/SHA1/NTLM Online Database</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://yehg.net/encoding/?" style="width: 800px">Encode/Debode</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://www.moralsoft.com/jso-online/hdojso.htm" style="width: 800px">JS Encoder/Obfuscator</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://www.jspretty.com/" style="width: 800px">JS Code Pretty</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://rumkin.com/tools/compression/compress_huff.php" style="width: 800px">Huffman JavaScript Compression</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://linux.die.net/man/" style="width: 800px">linux man page</a></div>
+				</div>
+				<div class="cntrow">
+					<div class="cntcell"><a href="http://tools.jb51.net/tools/peise.htm" style="width: 800px">配色器</a></div>
+				</div>
+				</div>
+				<div class="cntfooter"></div>
+			</div>
+		</div>
+		<div id="cnt4" class="tabhidecnt">
 			<div class="cnttable">
 				<div class="cntcap">Magazines</div>
 				<div class="cntbody">
@@ -219,14 +299,11 @@
 				</div>
 			</div>
 		</div>
-		<div id="cnt3" class="tabhidecnt">
-			This is Tab3
-		</div>
-		<div id="cnt4" class="tabhidecnt">
-			This is Tab4
-		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	InitPage();
+</script>
 </body>
 </head>
 </html>
