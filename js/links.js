@@ -1,8 +1,4 @@
-curId = '1';
-function InitPage(){
-	document.getElementById('tab'+curId).className = "selected";
-	document.getElementById('cnt'+curId).className = "tabcnt";
-}
+curId = '0';
 function BindNavOnClick(){
 
 }
