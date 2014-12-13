@@ -1,116 +1,73 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <title>Hikerell的黑帽子</title>
-
 <style type="text/css">
-
 #center{
-
 	position:absolute;
-
 	top:50%;
-
 	left:50%;
-
 	width:490px;
-
 	margin-left:-250px;
-
 	margin-top:-100px;
-
 	background-color:#999;
-
 	border:5px solid #FFF;
-
 	border-radius:15px;
-
 	cursor:pointer;
-
 	text-align:center;;
-
 	line-height:120px;
-
 	font-size:48px;
-
 	font-family:"Comic Sans MS", cursive;
-
 }
 
 #center:hover{
-
 	background-color:#333;
-
 	color:#CCC;
+}
 
+.nav{
+	background-color: #999;
+	border:0px solid #FFF;
+	border-radius:15px;
+	cursor:pointer;
+	text-align:center;;
+	line-height:48px;
+	font-size:24px;
+	font-family:"Comic Sans MS", cursive;
+}
+
+.nav:hover{
+	background-color:red;
+	color:#FFF;
 }
 
 #links{
-
 	position:absolute;
-
 	top:5%;
-
 	left:5%;
-
 	width:100px;
-
-	background-color: #999;
-
-	border:0px solid #FFF;
-
-	border-radius:15px;
-
-	cursor:pointer;
-
-	text-align:center;;
-
-	line-height:48px;
-
-	font-size:24px;
-
-	font-family:"Comic Sans MS", cursive;
-
 }
 
-#links:hover{
-
-	background-color:red;
-
-	color:#FFF;
-
-}
-
-#about{
-
+#vtracker{
 	position:absolute;
-
+	top:5%;
+	left:15%;
+	width:150px;
+}
+#about{
+	position:absolute;
 	bottom: 20%;
-
 	left:50%;
-
 	width: 780px;
-
 	margin-left: -390px;
-
 	background-color: #898;
-
 	border-radius:8px;
-
 	text-align:center;;
-
 	line-height:48px;
-
 	font-size:24px;
-
 	font-family:"Comic Sans MS", cursive;
-
 }
 
 
@@ -145,43 +102,30 @@ if(fallid)
 	clearInterval(fallid);
 
 fallid = setInterval(function(){
-
 	c.fillStyle="rgba(0,0,0,0.05)";
-
 	c.fillRect(0,0,w,h);
-
     c.fillStyle="rgba(0,255,0,1)";
-
     p=p.map(function(v,i){
-
 					c.fillText(String.fromCharCode(m.floor(2720+m.random()*33)),i*10,v);
-
         			v+=10;
-
 					if(v>768+m.random()*10000) v=0;
-
                     return v
-
     		})
-
     },33);
-
 }
-
 </script>
-
 </head>
-
 <body style="margin:0">
-
-<div id="links" onclick="window.open('http://hikerell.cn/links.html','_parent');">links</div>
-<div id="center" onclick="window.open('http://hikerell.cn/blog','_parent');">
+<div id="links" class="nav" onclick="window.open('links.html','_parent');">links</div>
+<div id="vtracker" class="nav" onclick="window.open('v-tracker.html','_blank');">V-Tracker</div>
+<div id="center" onclick="window.open('blog','_parent');">
 Hikerell's Black Hat
 </div>
 <div id="about">
 Malware, Vulnerabilities, Exploits, Shellcodes, AI and more . . .
 </div>
-<canvas id="q"></canvas>
+<canvas id="q">
+</canvas>
 <script>
 
 var fallid=null;

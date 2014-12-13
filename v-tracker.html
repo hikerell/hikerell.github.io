@@ -12,7 +12,7 @@
 		<section id="container" class="blue">
 
 			<!-- TOOLS PANEL-->
-			<a href="#" id='show-hide'>+</a>
+			<a href="#" id='show-hide' style="display:none;">+</a>
 			<div id="tools" style="display:none;">
 			 <div id="skins-select">
 				<a href="#" class="blue skins" id="blue-skin">neon</a>
@@ -21,10 +21,10 @@
 				<a href="#" class="green skins" id="green-skin">neon</a>
 			  </div>
 			  <div id="pattern-select">
-				<a href="#" class="pattern" id="pat1"><img src="img/v-tracker/bg.png" /></a>
-				<a href="#" class="pattern" id="pat2"><img src="img/v-tracker/bg1.png" /></a>
-				<a href="#" class="pattern" id="pat3"><img src="img/v-tracker/bg2.png" /></a>
-				<a href="#" class="pattern" id="pat4"><img src="img/v-tracker/bg3.png" /></a>
+				<a href="#" class="pattern" id="pat1"><img src="images/v-tracker/bg.png" /></a>
+				<a href="#" class="pattern" id="pat2"><img src="images/v-tracker/bg1.png" /></a>
+				<a href="#" class="pattern" id="pat3"><img src="images/v-tracker/bg2.png" /></a>
+				<a href="#" class="pattern" id="pat4"><img src="images/v-tracker/bg3.png" /></a>
 			  </div>
 			</div>
 			  <!-- / TOOLS PANEL -->
@@ -32,13 +32,14 @@
 			<!-- LOGO -->
 			<div id="logo">V-Tracker</div>
 			<!-- /LOGO -->
-			<br />
+			
 			<!-- WELCOME TEXT -->
 			<p>
 				<span>March 1st, 2015</span>
 			</p>
 			<!-- WELCOME TEXT -->
 
+			<br />
 			<br />
 
 			<!-- COUNTDOWN // html code generated in main.js -->
@@ -58,16 +59,33 @@
 		<script src="js/jQuery.min.js" type="text/javascript"></script>
 		<script src="js/jCountdown.js" type="text/javascript"></script>
 		<script type="text/javascript">
+		var iSkin = 0;
+		function changeSkin(){
+					iSkin ++;
+					if(iSkin==0){
+						$('#container').attr('class','blue');
+					}else if(iSkin == 1){
+						$('#container').attr('class','purple');
+					}else if(iSkin == 2){
+						$('#container').attr('class','red');
+					}else{
+						$('#container').attr('class','green');
+						iSkin = -1;
+					}
+					
+				}
 		// documentation of jCountdown plugin --> http://www.webmuse.co.uk/projects/jcountdown-jquery-plugin/
 		// here it's simple you have to just change your lunch date !!!
-$(document).ready(function() {
-	$("#count").countdown({
-		//to change lunch date just replace the current date with yours .
-		date: "March 1, 2015",  
-		//html code in count div here.
-		htmlTemplate: "<div id='days-count' class='numbers'>%{d}<span class='days-label'>days</span></div> <div id='hours-count' class='numbers'>%{h}<span class='hours-label'>hours</span></div><div id='min-count' class='numbers'>%{m}<span class='min-label'>min</span></div><div id='sec-count' class='numbers'>%{s}<span class='sec-label'>sec</span></div>"
-	});
-});
+		$(document).ready(function() {
+			$("#count").countdown({
+			date: "March 1, 2015",  
+			//html code in count div here.
+			htmlTemplate: "<div id='days-count' class='numbers'>%{d}<span class='days-label'>days</span></div> <div id='hours-count' class='numbers'>%{h}<span class='hours-label'>hours</span></div><div id='min-count' class='numbers'>%{m}<span class='min-label'>min</span></div><div id='sec-count' class='numbers'>%{s}<span class='sec-label'>sec</span></div>"
+
+			});
+
+			//setInterval("changeSkin()", 1000);
+		});
 
 ////////////////////show-hide tools panel////////////////////////
 $("#show-hide").live("click", function(){ 

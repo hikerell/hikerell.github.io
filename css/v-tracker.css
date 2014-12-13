@@ -21,23 +21,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /*neon font load*/
 @font-face {
-	font-family: 'Neon club music';
-	src: url('../font/NEONCLUBMUSIC.otf');
+	font-family:"Comic Sans MS", cursive;
 }
 
 
 body{
-font-family:'Neon club music',sans-serif;
+font-family:"Comic Sans MS", cursive;
 color:#fff;
 text-align:center;
 }
 
 /*background patterns*/
 
-.bg1{background: #000 url(../img/bg.png);}
-.bg2{background: #000 url(../img/bg1.png);}
-.bg3{background: #000 url(../img/bg2.png);}
-.bg4{background: #000 url(../img/bg3.png);}
+.bg1{background: #000 url(../images/v-tracker/bg.png);}
+.bg2{background: #000 url(../images/v-tracker/bg1.png);}
+.bg3{background: #000 url(../images/v-tracker/bg2.png);}
+.bg4{background: #000 url(../images/v-tracker/bg3.png);}
 
 
 /*disable test decoration from links*/
@@ -50,8 +49,7 @@ text-transform: uppercase;
 /*welcome message*/
 p{
 font-size: 32px;
-padding-top: 10%;
-text-transform: uppercase;
+padding-top: 7%;
 }
 
 /*used for second ligne in welcome message*/
@@ -76,7 +74,7 @@ text-shadow: 0 0 10px #02AEFF, 0 0 20px #02AEFF, 0 0 30px #02AEFF, 0 0 40px #02A
 }
    /*blue circle png*/
 .blue .numbers{
-background: url(../img/blue/circle.png) no-repeat;
+background: url(../images/v-tracker/blue-circle.png) no-repeat;
 }
 
 /*blue shadow for mail input*/
@@ -95,9 +93,9 @@ box-shadow: 0 0 10px #02AEFF, 0 0 20px #02AEFF, 0 0 30px #02AEFF, 0 0 40px !impo
 box-shadow: 0 0 5px #02AEFF, 0 0 10px #02AEFF, 0 0 20px #02AEFF, 0 0 30px 
 }
 	/*blue social png*/
-.blue #s-google{background-image: url(../img/blue/google-icon.png);}
-.blue #s-facebook{background-image: url(../img/blue/facebook-icon.png);}
-.blue #s-twitter{background-image: url(../img/blue/twitter-icon.png);}
+.blue #s-google{background-image: url(../images/v-tracker/blue-google-icon.png);}
+.blue #s-facebook{background-image: url(../images/v-tracker/blue-facebook-icon.png);}
+.blue #s-twitter{background-image: url(../images/v-tracker/blue-twitter-icon.png);}
 
 
 
@@ -108,7 +106,7 @@ text-shadow: 0 0 10px #ff0202, 0 0 20px #ff0202, 0 0 30px #ff0202, 0 0 40px #ff0
 }
 
 .red .numbers{
-background: url(../img/red/circle.png) no-repeat;
+background: url(../images/v-tracker/red-circle.png) no-repeat;
 }
 
 .red #mail-submit{border: 1px solid #ff0202;background:#ff0202;}
@@ -125,9 +123,9 @@ box-shadow: 0 0 10px #ff0202, 0 0 20px #ff0202, 0 0 30px #ff0202, 0 0 40px !impo
 box-shadow: 0 0 5px #ff0202, 0 0 10px #ff0202, 0 0 20px #ff0202, 0 0 30px 
 }
 
-.red #s-google{background-image: url(../img/red/google-icon.png);}
-.red #s-facebook{background-image: url(../img/red/facebook-icon.png);}
-.red #s-twitter{background-image: url(../img/red/twitter-icon.png);}
+.red #s-google{background-image: url(../images/v-tracker/red-google-icon.png);}
+.red #s-facebook{background-image: url(../images/v-tracker/red-facebook-icon.png);}
+.red #s-twitter{background-image: url(../images/v-tracker/red-twitter-icon.png);}
 
 
 
@@ -137,7 +135,7 @@ text-shadow: 0 0 10px #fc02ff, 0 0 20px #fc02ff, 0 0 30px #fc02ff, 0 0 40px #fc0
 }
 
 .purple .numbers{
-background: url(../img/purple/circle.png) no-repeat;
+background: url(../images/v-tracker/purple-circle.png) no-repeat;
 }
 
 .purple #mail-submit{border: 1px solid #fc02ff;background:#fc02ff;}
@@ -154,9 +152,9 @@ box-shadow: 0 0 10px #ff0202, 0 0 20px #fc02ff, 0 0 30px #ff0202, 0 0 40px !impo
 box-shadow: 0 0 5px #ff0202, 0 0 10px #fc02ff, 0 0 20px #ff0202, 0 0 30px 
 }
 
-.purple #s-google{background-image: url(../img/purple/google-icon.png);}
-.purple #s-facebook{background-image: url(../img/purple/facebook-icon.png);}
-.purple #s-twitter{background-image: url(../img/purple/twitter-icon.png);}
+.purple #s-google{background-image: url(../images/v-tracker/purple-google-icon.png);}
+.purple #s-facebook{background-image: url(../images/v-tracker/purple-facebook-icon.png);}
+.purple #s-twitter{background-image: url(../images/v-tracker/purple-twitter-icon.png);}
 
 
 
@@ -167,7 +165,7 @@ text-shadow: 0 0 10px #02ff08, 0 0 20px #02ff08, 0 0 30px #02ff08, 0 0 40px #02f
 }
 
 .green .numbers{
-background: url(../img/green/circle.png) no-repeat;
+background: url(../images/v-tracker/green-circle.png) no-repeat;
 }
 
 .green #mail-submit{border: 1px solid #02ff08;	background:#02ff08;}
@@ -184,9 +182,9 @@ box-shadow: 0 0 10px #02ff08, 0 0 20px #02ff08, 0 0 30px #02ff08, 0 0 40px !impo
 box-shadow: 0 0 5px #02ff08, 0 0 10px #02ff08, 0 0 20px #02ff08, 0 0 30px 
 }
 
-.green #s-google{background-image: url(../img/green/google-icon.png);}
-.green #s-facebook{background-image: url(../img/green/facebook-icon.png);}
-.green #s-twitter{background-image: url(../img/green/twitter-icon.png);}
+.green #s-google{background-image: url(../images/v-tracker/green-google-icon.png);}
+.green #s-facebook{background-image: url(../images/v-tracker/green-facebook-icon.png);}
+.green #s-twitter{background-image: url(../images/v-tracker/green-twitter-icon.png);}
 
 
 /* SOCIAL */
