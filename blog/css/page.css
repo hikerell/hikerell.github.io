@@ -30,7 +30,8 @@
 #search-input{
 	width: 140px;
 	height: 30px;
-	margin: 0px 0px 0px 5px;
+	margin: 1px 0px 1px 5px;
+	padding-left: 3px;
 	border-radius: 10px;
 	background-color: #FFF;
 	line-height: 40px;
