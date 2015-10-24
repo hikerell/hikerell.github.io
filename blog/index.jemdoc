@@ -1,0 +1,22 @@
+# jemdoc: menu{MENU}{index.html}
+= Hikerell's Blog
+
+== Who Am I
+
+  /Hi, I am hikerell, a forsaken hiker wallowing in the Computer Science./
+
+  /There are +*10*+ kinds of humen bings and yep, I think I should belong to the group who learn some computer science in it./ :-)
+
+  /I'm intrested in the Comuter Sicence and working as a security engineer at a company in China. Here are some works I am woking on at my leisure time./
+
+== Contacts
+	Twitter: [https://www.twitter.com/hikerell @hikerell]
+
+	Weibo  : [http://weibo.com/yearsstroy @hikerell的黑帽子]
+
+	Gmail  : hikerell@gmail.com
+
+== Papers/Works
+
+  - [http://pan.baidu.com/s/1x9cHw CVE-2014-6332 DVE Exploitation Technology Analysis], 2014.11
+  - [http://pan.baidu.com/s/1c0rimWC CVE-2014-3566 POODLE Attacks on SSLv3 Technology Analysis], 2014.10
