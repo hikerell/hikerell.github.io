@@ -18,6 +18,8 @@
 
 == Papers/Works
 
+  - [https://drive.google.com/file/d/0B8fYwUY8ZRTtTVJ5cUtIY0loRVE/view?usp=sharing Ouroboros: Tearing Xen Hypervisor With the Snake], 2016.08, slides for Blackhat USA 2016
+  - [https://drive.google.com/file/d/0B8fYwUY8ZRTtZHVfRWNGbHFiRzA/view?usp=sharing Exploit Two Xen Hypervisor Vulnerabilities], 2016.08 white-paper for Blackhat USA 2016
   - [../papers/HITB2016Amsterdam_Advanced-Exploitation-Xen-Hypervisor-VM-Escape.pdf Advanced Exploitation: Xen Hypervisor VM Escape], 2016.05 HITB 2016 Conference at Amsterdam
   - [https://github.com/QubesOS/qubes-secpack/blob/master/QSBs/qsb-022-2015.txt XSA-148/CVE-2015-7835 Advanced Xen Virtualization Escape Vulnerability], 2015.10
   - [http://pan.baidu.com/s/1x9cHw CVE-2014-6332 DVE Exploitation Technology Analysis], 2014.11
